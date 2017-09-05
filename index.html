@@ -1,0 +1,709 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Digital Kosha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Mosaic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/navbar.less">
+
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel='stylesheet' type='text/css'/>
+    <!-- Graph CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- jQuery -->
+    <!-- lined-icons -->
+    <link rel="stylesheet" href="css/icon-font.css" type='text/css'/>
+    <!-- //lined-icons -->
+    <!-- Meters graphs -->
+    <script src="js/jquery-2.1.4.js"></script>
+
+    <!--Awesomeplete-->
+    <link href="css/awesomplete.base.css" rel="stylesheet">
+    <link href="css/awesomplete.css" rel="stylesheet">
+    <script src="js/awesomplete.js"></script>
+    <script src="js/awesomplete.min.js"></script>
+    <!--End Awesomeplete-->
+
+
+    <!--Page Styling-->
+    <style>
+        /*
+        Code snippet by maridlcrmn for Bootsnipp.com
+        Follow me on Twitter @maridlcrmn
+        */
+        .navbar-nav, .navbar {
+            border-radius: 0;
+            border-bottom-color: inherit
+        }
+
+        .navbar-nav.navbar-right .btn {
+            position: relative;
+            z-index: 2;
+            padding: 4px 20px;
+            margin: 10px auto;
+            transition: transform 0.3s;
+        }
+
+        .navbar .navbar-collapse {
+            position: relative;
+            overflow: hidden !important;
+
+        }
+
+        .navbar .navbar-collapse .navbar-right > li:last-child {
+            padding-left: 22px;
+        }
+
+        .navbar .nav-collapse {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            padding-right: 120px;
+            padding-left: 80px;
+            width: 100%;
+        }
+
+        .navbar.navbar-default .nav-collapse {
+            background-color: #1f928b;
+        }
+
+        .navbar.navbar-inverse .nav-collapse {
+            background-color: #1f928b;
+        }
+
+        .navbar .nav-collapse .navbar-form {
+            border-width: 1em;
+            box-shadow: none;
+        }
+
+        .nav-collapse > li {
+            float: right;
+        }
+
+        .btn.btn-circle {
+            border-radius: 50px;
+        }
+
+        .btn.btn-outline {
+            background-color: transparent;
+        }
+
+        .navbar-nav.navbar-right .btn:not(.collapsed) {
+            background-color: rgb(234, 87, 163);
+            border-color: rgb(234, 87, 163);
+            color: rgb(255, 255, 255);
+        }
+
+        .navbar.navbar-default .nav-collapse,
+        .navbar.navbar-inverse .nav-collapse {
+            height: auto !important;
+            transition: transform 0.2s;
+            transform: translate(0px, -50px);
+        }
+
+        .navbar.navbar-default .nav-collapse.in,
+        .navbar.navbar-inverse .nav-collapse.in {
+            transform: translate(0px, 0px);
+        }
+
+        @media screen and (max-width: 767px) {
+            .navbar .navbar-collapse .navbar-right > li:last-child {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .navbar .nav-collapse {
+                margin: 7.5px auto;
+                padding: 0;
+            }
+
+            .navbar .nav-collapse .navbar-form {
+                margin: 0;
+            }
+
+            .nav-collapse > li {
+                float: none;
+            }
+
+            .navbar.navbar-default .nav-collapse,
+            .navbar.navbar-inverse .nav-collapse {
+                transform: translate(-100%, 0px);
+            }
+
+            .navbar.navbar-default .nav-collapse.in,
+            .navbar.navbar-inverse .nav-collapse.in {
+                transform: translate(0px, 0px);
+            }
+
+            .navbar.navbar-default .nav-collapse.slide-down,
+            .navbar.navbar-inverse .nav-collapse.slide-down {
+                transform: translate(0px, -100%);
+            }
+
+            .navbar.navbar-default .nav-collapse.in.slide-down,
+            .navbar.navbar-inverse .nav-collapse.in.slide-down {
+                transform: translate(0px, 0px);
+            }
+        }
+
+        #page-wrapper {
+            z-index: -1;
+        }
+
+        @media screen and (max-width: 480px) {
+
+            .navbar .navbar-collapse .navbar-right {
+                padding-left: 15px;
+                padding-right: 15px;
+                margin: 0;
+                background-color: #222  ;
+                position: relative;
+                float: right;
+                min-width: 100%;
+                height: auto;
+                z-index: 99;
+
+            }
+            navbar-collapse collapse in
+            {
+                position: relative;
+                overflow: hidden; !important;
+            }
+            .collapse .in
+            {
+                display: block;
+            }
+            .navbar .navbar-collapse .navbar-right > ul
+            {
+                z-index: 1030;
+            }
+
+
+            .navbar .navbar-collapse .navbar-right > li:last-child {
+                padding-left: 15px;
+                padding-right: 15px;
+                margin: 0;
+                background-color: #222;
+                position: relative;
+                float: right;
+                min-width: 100%;
+                height: auto;
+                text-align: center;
+
+            }
+
+            .navbar .navbar-collapse .navbar-left {
+                padding-left: 15px;
+                padding-right: 15px;
+                margin: 0;
+                background-color: #222;
+                position: relative;
+                float: right;
+                display: inline-block;
+                min-width: 100%;
+                height: auto;
+                text-align: center;
+            }
+
+            .navbar .nav-collapse {
+                margin: 7.5px auto;
+                padding: 0;
+            }
+
+            .navbar .nav-collapse .navbar-form {
+                margin: 0;
+            }
+
+            .nav-collapse > li {
+                float: none;
+            }
+
+            .navbar.navbar-default .nav-collapse,
+            .navbar.navbar-inverse .nav-collapse {
+                transform: translate(100%, 0px);
+            }
+
+            .navbar.navbar-default .nav-collapse.in,
+            .navbar.navbar-inverse .nav-collapse.in {
+                transform: translate(0px, 0px);
+            }
+
+            .navbar.navbar-default .nav-collapse.slide-down,
+            .navbar.navbar-inverse .nav-collapse.slide-down {
+                transform: translate(0px, -100%);
+            }
+
+            .navbar.navbar-default .nav-collapse.in.slide-down,
+            .navbar.navbar-inverse .nav-collapse.in.slide-down {
+                transform: translate(0px, 0px);
+            }
+        }
+
+
+    </style>
+
+    <style>
+        /* carousel */
+        #quote-carousel {
+            font-family: Bell MT;
+            font-size: xx-small;
+            margin-left: -1%;
+        }
+
+        #quote-carousel {
+            /*padding: 0 10px 30px 10px;*/
+
+        }
+
+        /* Changes the position of the indicators */
+        #quote-carousel .carousel-indicators {
+            right: 50%;
+            top: auto;
+            bottom: 0px;
+            margin-right: -19px;
+        }
+
+        /* Changes the color of the indicators */
+        #quote-carousel .carousel-indicators li {
+            background: #c0c0c0;
+        }
+
+        #quote-carousel .carousel-indicators .active {
+            background: #333333;
+        }
+
+        /* End carousel */
+
+        .item blockquote {
+            border-left: none;
+            margin: 0;
+        }
+
+        /**
+          MEDIA QUERIES
+        */
+
+        /* Small devices (tablets, 768px and up) */
+        @media (min-width: 768px) {
+            #quote-carousel {
+                margin-bottom: 0;
+                padding: 0 40px 30px 40px;
+            }
+
+        }
+
+        /* Small devices (tablets, up to 768px) */
+        @media (max-width: 768px) {
+
+            /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+            #quote-carousel .carousel-indicators {
+                bottom: -20px !important;
+            }
+
+            #quote-carousel .carousel-indicators li {
+                display: inline-block;
+                margin: 0px 5px;
+                width: 15px;
+                height: 15px;
+            }
+
+            #quote-carousel .carousel-indicators li.active {
+                margin: 0px 5px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    </style>
+    <script>
+        // When the DOM is ready, run this function
+        $(document).ready(function () {
+            //Set the carousel options
+            $('#quote-carousel').carousel({
+                pause: true,
+                interval: 2500,
+            });
+        });
+    </script>
+    <!--quotes-->
+    <!--end quotes-->
+    <!--End Page Styling-->
+
+</head>
+<!-- /w3layouts-agile -->
+
+<body class="sticky-header left-side-collapsed" onload="initMap()">
+<section>
+    <!-- left side start-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo and iconic logo start-->
+        <div class="logo">
+            <h1><a href="index.html">Digital<span>Kosha</span></a></h1>
+        </div>
+        <div class="logo-icon text-center">
+            <a href="index.html">dk </a>
+        </div>
+        <!-- /Side bar behavoir -->
+        <!--logo and iconic logo end-->
+        <div class="left-side-inner">
+
+            <!--sidebar nav start-->
+            <ul class="nav nav-pills nav-stacked custom-nav">
+                <li class="active"><a href="index.html"><i class="lnr lnr-home"></i><span>Home</span></a></li>
+                <li><a href="#"><i class="lnr lnr-users"></i> <span>Artists</span></a></li>
+                <li><a href="#"><i class="lnr lnr-music-note"></i> <span>Albums</span></a></li>
+
+                <li><a href="#"><i class="lnr lnr-book"></i><span>Latest News</span></a></li>
+                <!--    <li class="menu-list"><a href="#"><i class="fa fa-user"></i> <span>My Account</span></a>
+                        <ul class="sub-menu-list">
+                            <li><a href="#"> Favourites</a></li>
+                            <li><a href="#"> Profile</a></li>
+
+                        </ul>
+                    </li>-->
+                <li class="menu-list"><a href="pages/contact.html"><i class="fa fa-thumb-tack"></i><span>Contact</span></a>
+                    <ul class="sub-menu-list">
+                        <li><a href="#">Location</a></li>
+                        <li><a href="pages/AboutUs.html">About Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--sidebar nav end-->
+        </div>
+    </div>
+
+    <!-- /Side bar behavoir -->
+    <!-- signup -->
+    <!--   <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+           <div class="modal-dialog" role="document">
+               <div class="modal-content modal-info">
+                   <div class="modal-header">
+                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                               aria-hidden="true">&times;</span></button>
+                   </div>
+                  <div class="modal-body modal-spa">
+                       <div class="sign-grids">
+                           <div class="sign">
+                             <!--  <div class="sign-left">
+                                   <ul>
+                                       <li><a class="fb" href="#"><i></i>Sign in with Facebook</a></li>
+                                       <br/>
+                                       <li><a class="goog" href="#"><i></i>Sign in with Google</a></li>
+                                       <br/>
+                                       <li><a class="linkin" href="#"><i></i>Sign in with Linkedin</a></li>
+                                   </ul>
+                               </div>-
+                               <div class="sign-right">
+                                   <form action="#" method="post">
+
+                                       <h3>Create your account </h3>
+                                       <input type="text" value="Name" onfocus="this.value = '';"
+                                              onblur="if (this.value == '') {this.value = 'Name';}" required="">
+                                       <input type="text" value="Surname" onfocus="this.value = '';"
+                                              onblur="if (this.value == '') {this.value = 'Surname';}" required="">
+                                       <input type="text" value="Username" onfocus="this.value = '';"
+                                              onblur="if (this.value == '') {this.value = 'Username';}" required="">
+                                       <input type="text" value="Gender" onfocus="this.value = '';"
+                                              onblur="if (this.value == '') {this.value = 'Gender';}" required="">
+                                       <input type="text" value="Mobile Number" onfocus="this.value = '';"
+                                              onblur="if (this.value == '') {this.value = 'Mobile Number';}"
+                                              required="">
+                                       <input type="text" value="Email Address" onfocus="this.value = '';"
+                                              onblur="if (this.value == '') {this.value = 'Email Address';}"
+                                              required="">
+                                       <input type="password" value="Password" onfocus="this.value = '';"
+                                              onblur="if (this.value == '') {this.value = 'Password';}"
+                                              required="">
+                                       <input type="submit" value="CREATE ACCOUNT">
+                                   </form>
+                               </div>
+
+                               <div class="clearfix"></div>
+
+
+                           </div>
+                           <p>By logging in you agree to our <span>Terms and Conditions</span> and
+                               <span>Privacy Policy</span></p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>->
+       <!-- //signup -->
+
+    <!-- left side end-->
+
+    <!-- main content start-->
+    <div class="main-content">
+        <!-- header-starts -->
+
+        <!-- Second navbar for search -->
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button id="btnCollapsedNav" style="float: right" type="button" class="navbar-toggle collapsed pull-right"
+                            data-toggle="collapse"
+                            data-target="#navbar-collapse-3">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--toggle button start-->
+                    <a class="toggle-btn menu-collapsed"><i class="fa fa-bars"></i></a>
+                    <!--toggle button end-->
+                    <script>
+                        $(document).ready(function(){
+                            $("#btnCollapsedNav").click(function(){
+                                $("#collapsediv").animate({
+                                    height: 'toggle'
+                                });
+                            });
+                        });
+                    </script>
+
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <div class="collapse navbar-collapse " id="navbar-collapse-3">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li style="padding: 2px"><a href="#" class=" text-capitalize banner pull-left"
+                                                    style="border: 1px whitesmoke solid;border-radius: 10px;"><span
+                                class="fa fa-user"></span> User Name Here!!!</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Top Charts</a></li>
+                        <li><a href="pages/browse.html">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="pages/Registration.php">Sign up</a></li>
+                        <li><a href="#">Logout</a></li>
+                        <li>
+                            <a class="btn btn-default btn-outline btn-circle collapsed" data-toggle="collapse"
+                               href="#nav-collapse3" aria-expanded="false" aria-controls="nav-collapse3">Search</a>
+                        </li>
+                    </ul>
+                    <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse3">
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search"/>
+                            </div>
+                            <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-search"
+                                                                               aria-hidden="true"></span></button>
+                        </form>
+                    </div>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
+
+
+        <!--notification menu end -->
+        <!-- //header-ends -->
+        <!--------------------------------------------------------------------------Start of Page Content-------------------->
+
+        <!--body wrapper end-->
+
+        <!-- Carousel Slides / Quotes -->
+        <div id="collapsediv" style="float: right; height:300px;width:100px;position:relative; display: none; z-index: 99" ></div>
+
+        <div id="page-wrapper">
+            <!--Music Quotes-->
+            <div style="" class="carousel slide" data-ride="carousel" id="quote-carousel">
+
+
+                <div class="carousel-inner">
+
+                    <!-- Quote 1 -->
+                    <div class="item active">
+                        <blockquote>
+                            <div class="row">
+                                <div class="col-sm-1 text-center">
+                                </div>
+                                <div class="col-sm-10 text-center">
+                                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in
+                                        arcu
+                                        blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium
+                                        mauris.
+                                    </small>
+                                    <small style="font-size: x-small">Someone famous</small>
+                                </div>
+                                <div class="col-sm-1 text-center">
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <!-- Quote 2 -->
+                    <div class="item">
+                        <blockquote>
+                            <div class="row">
+                                <div class="col-sm-1 text-center">
+                                </div>
+                                <div class="col-sm-10 text-center">
+                                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in
+                                        arcu
+                                        blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium
+                                        mauris.
+                                    </small>
+                                    <small style="font-size: x-small">Someone famous</small>
+                                </div>
+                                <div class="col-sm-1 text-center">
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <!-- Quote 3 -->
+                    <div class="item">
+                        <blockquote>
+                            <div class="row">
+                                <div class="col-sm-1 text-center">
+                                </div>
+                                <div class="col-sm-10 text-center">
+                                    <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in
+                                        arcu
+                                        blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium
+                                        mauris.
+                                    </small>
+                                    <small style="font-size: x-small">Someone famous</small>
+                                </div>
+                                <div class="col-sm-1 text-center">
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <!--End Quotes-->
+            <div style="z-index: -1030;" class="inner-content">
+                <div class="">
+                    <!--banner-section-->
+                    <div style="z-index: -1030;" class="banner-section">
+                        <div style="z-index: -1030;" class="banner">
+                            <div class="callbacks_container">
+                                <ul class="rslides callbacks callbacks1" id="slider4">
+                                    <li>
+                                        <div class="banner-img">
+                                            <img src="images/28.jpeg" class="img-responsive" alt="">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="banner-img">
+                                            <img src="images/31.jpg" class="img-responsive" alt="">
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="banner-img">
+                                            <img src="images/27.jpeg" class="img-responsive" alt="">
+                                        </div>
+
+
+                                        <!-- /w3layouts-agileits -->
+                                    </li>
+                                    <li>
+                                        <div class="banner-img">
+                                            <img src="images/29.jpeg" class="img-responsive" alt="">
+                                        </div>
+
+
+                                        <!-- /w3layouts-agileits -->
+                                    </li>
+                                    <li>
+                                        <div class="banner-img">
+                                            <img src="images/30.jpeg" class="img-responsive" alt="">
+                                        </div>
+
+                                        <!-- /w3layouts-agileits -->
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--banner-->
+                            <script src="js/responsiveslides.min.js"></script>
+                            <script>
+                                // You can also use "$(window).load(function() {"
+                                $(function () {
+                                    // Slideshow 4
+                                    $("#slider4").responsiveSlides({
+                                        auto: true,
+                                        pager: true,
+                                        nav: true,
+                                        speed: 500,
+                                        namespace: "callbacks",
+                                        before: function () {
+                                            $('.events').append("<li>before event fired.</li>");
+                                        },
+                                        after: function () {
+                                            $('.events').append("<li>after event fired.</li>");
+                                        }
+                                    });
+
+                                });
+                            </script>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <!--//End-banner-->
+                    <!--albums-->
+
+
+                    <div class="clearfix"></div>
+                    <!-- /w3l-agile-its -->
+                </div>
+                <!--body wrapper start-->
+
+
+            </div>
+            <div class="clearfix"></div>
+            <!-----------------------------------------------------------------------------END of Page Content------------------------------------>
+
+        </div>
+        <!--body wrapper end-->
+
+    </div>
+    <!-- main content end-->
+    <div class="footer">
+        <!--footer section start-->
+        <footer>
+            <p>&copy 2016 Mosaic. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts
+                & <4 Tier/> </a></p>
+        </footer>
+        <!--footer section end-->
+    </div>
+</section>
+
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.js"></script>
+</body>
+
+</html>
