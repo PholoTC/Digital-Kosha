@@ -1,0 +1,875 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Digital Kosha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Mosaic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <!-- Custom CSS -->
+    <link href="../css/style.css" rel='stylesheet' type='text/css'/>
+    <!-- Graph CSS -->
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <!-- jQuery -->
+    <!-- lined-icons -->
+    <link rel="stylesheet" href="../css/icon-font.css" type='text/css'/>
+    <!-- //lined-icons -->
+    <!-- Meters graphs -->
+    <script src="../js/jquery-2.1.4.js"></script>
+
+    <!--Awesomeplete-->
+    <link href="../css/awesomplete.base.css" rel="stylesheet">
+    <link href="../css/awesomplete.css" rel="stylesheet">
+    <script src="../js/awesomplete.js"></script>
+    <script src="../js/awesomplete.min.js"></script>
+    <!--End Awesomeplete-->
+
+
+    <!--Page Styling-->
+    <!--Audio PLayer-->
+    <style>
+        /* Desktop
+        ================================================== */
+
+        .container {
+            position: relative;
+            margin: 0 auto;
+            width: 700px;
+        }
+
+        .column {
+            width: inherit;
+        }
+
+        /* Tablet (Portrait)
+        ================================================== */
+
+        @media only screen and (min-width: 768px) and (max-width: 959px) {
+            .container {
+                width: 556px;
+            }
+        }
+
+        /* Mobile (Portrait)
+        ================================================== */
+
+        @media only screen and (max-width: 767px) {
+            .container {
+                width: 300px;
+            }
+        }
+
+        /* Mobile (Landscape)
+        ================================================== */
+
+        @media only screen and (min-width: 480px) and (max-width: 767px) {
+            .container {
+                width: 420px;
+            }
+        }
+
+        /* Audio Player Styles
+        ================================================== */
+
+        /* Default / Desktop / Firefox */
+        audio {
+            margin: 0 15px 0 14px;
+            width: 670px;
+        }
+
+        #mainwrap {
+            box-shadow: 0 0 6px 1px rgba(0, 0, 0, .25);
+        }
+
+        #audiowrap {
+            background-color: #231F20;
+            margin: 0 auto;
+        }
+
+        #plwrap {
+            margin: 0 auto;
+        }
+
+        #tracks {
+            position: relative;
+            text-align: center;
+        }
+
+        #nowPlay {
+            display: inline;
+        }
+
+        #npTitle {
+            margin: 0;
+            padding: 21px;
+            text-align: right;
+        }
+
+        #npAction {
+            padding: 21px;
+            position: absolute;
+        }
+
+        #plList {
+            margin: 0;
+        }
+
+        #plList li {
+            background-color: #231F20;
+            cursor: pointer;
+            display: block;
+            margin: 0;
+            padding: 21px 0;
+        }
+
+        #plList li:hover {
+            background-color: #262223;
+        }
+
+        .plItem {
+            position: relative;
+        }
+
+        .plTitle {
+            left: 50px;
+            overflow: hidden;
+            position: absolute;
+            right: 65px;
+            text-overflow: ellipsis;
+            top: 0;
+            white-space: nowrap;
+        }
+
+        .plNum {
+            padding-left: 21px;
+            width: 25px;
+        }
+
+        .plLength {
+            padding-left: 21px;
+            position: absolute;
+            right: 21px;
+            top: 0;
+        }
+
+        .plSel, .plSel:hover {
+            background-color: #262223 !important;
+            cursor: default !important;
+        }
+
+        a[id^="btn"] {
+            background-color: #231F20;
+            color: #C8C7C8;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 50px;
+            margin: 0;
+            padding: 21px 27px;
+            text-decoration: none;
+        }
+
+        a[id^="btn"]:last-child {
+            margin-left: -4px;
+        }
+
+        a[id^="btn"]:hover, a[id^="btn"]:active {
+            background-color: #262223;
+        }
+
+        a[id^="btn"]::-moz-focus-inner {
+            border: 0;
+            padding: 0;
+        }
+
+        /* IE 9 */
+        html[data-useragent*="MSIE 9.0"] audio {
+            margin-left: 9px;
+            outline: none;
+            width: 680px;
+        }
+
+        html[data-useragent*="MSIE 9.0"] #audiowrap {
+            background-color: #000;
+        }
+
+        html[data-useragent*="MSIE 9.0"] a[id^="btn"] {
+            background-color: #000;
+        }
+
+        html[data-useragent*="MSIE 9.0"] a[id^="btn"]:hover {
+            background-color: #080808;
+        }
+
+        html[data-useragent*="MSIE 9.0"] #plList li {
+            background-color: #000;
+        }
+
+        html[data-useragent*="MSIE 9.0"] #plList li:hover {
+            background-color: #080808;
+        }
+
+        html[data-useragent*="MSIE 9.0"] .plSel,
+        html[data-useragent*="MSIE 9.0"] .plSel:hover {
+            background-color: #080808 !important;
+        }
+
+        /* IE 10 */
+        html[data-useragent*="MSIE 10.0"] audio {
+            margin-left: 6px;
+            width: 687px;
+        }
+
+        html[data-useragent*="MSIE 10.0"] #audiowrap {
+            background-color: #000;
+        }
+
+        html[data-useragent*="MSIE 10.0"] a[id^="btn"] {
+            background-color: #000;
+        }
+
+        html[data-useragent*="MSIE 10.0"] a[id^="btn"]:hover {
+            background-color: #080808;
+        }
+
+        html[data-useragent*="MSIE 10.0"] #plList li {
+            background-color: #000;
+        }
+
+        html[data-useragent*="MSIE 10.0"] #plList li:hover {
+            background-color: #080808;
+        }
+
+        html[data-useragent*="MSIE 10.0"] .plSel,
+        html[data-useragent*="MSIE 10.0"] .plSel:hover {
+            background-color: #080808 !important;
+        }
+
+        /* IE 11 */
+        html[data-useragent*="rv:11.0"] audio {
+            margin-left: 2px;
+            width: 695px;
+        }
+
+        html[data-useragent*="rv:11.0"] #audiowrap {
+            background-color: #000;
+        }
+
+        html[data-useragent*="rv:11.0"] a[id^="btn"] {
+            background-color: #000;
+        }
+
+        html[data-useragent*="rv:11.0"] a[id^="btn"]:hover {
+            background-color: #080808;
+        }
+
+        html[data-useragent*="rv:11.0"] #plList li {
+            background-color: #000;
+        }
+
+        html[data-useragent*="rv:11.0"] #plList li:hover {
+            background-color: #080808;
+        }
+
+        html[data-useragent*="rv:11.0"] .plSel,
+        html[data-useragent*="rv:11.0"] .plSel:hover {
+            background-color: #080808 !important;
+        }
+
+        /* All Apple Products */
+        html[data-useragent*="Apple"] audio {
+            margin: 0;
+            width: 100%;
+        }
+
+        html[data-useragent*="Apple"] #audiowrap {
+            background-color: #000;
+        }
+
+        html[data-useragent*="Apple"] a[id^="btn"] {
+            background-color: #000;
+        }
+
+        html[data-useragent*="Apple"] a[id^="btn"]:hover {
+            background-color: #080808;
+        }
+
+        html[data-useragent*="Apple"] #plList li {
+            background-color: #000;
+        }
+
+        html[data-useragent*="Apple"] #plList li:hover {
+            background-color: #080808;
+        }
+
+        html[data-useragent*="Apple"] .plSel,
+        html[data-useragent*="Apple"] .plSel:hover {
+            background-color: #080808 !important;
+        }
+
+        /* IOS 7 */
+        html[data-useragent*="OS 7"] body {
+            color: #373837;
+        }
+
+        html[data-useragent*="OS 7"] audio {
+            margin-left: 3px;
+            width: 690px;
+        }
+
+        html[data-useragent*="OS 7"] #audiowrap {
+            background-color: #e6e6e6;
+        }
+
+        html[data-useragent*="OS 7"] a[id^="btn"] {
+            background-color: #e6e6e6;
+            color: #373837;
+        }
+
+        html[data-useragent*="OS 7"] a[id^="btn"]:hover {
+            background-color: #eee;
+        }
+
+        html[data-useragent*="OS 7"] #plList li {
+            background-color: #e6e6e6;
+        }
+
+        html[data-useragent*="OS 7"] #plList li:hover {
+            background-color: #eee;
+        }
+
+        html[data-useragent*="OS 7"] .plSel,
+        html[data-useragent*="OS 7"] .plSel:hover {
+            background-color: #eee !important;
+        }
+
+        /* IOS 8 */
+        html[data-useragent*="OS 8"] body {
+            color: #373837;
+        }
+
+        html[data-useragent*="OS 8"] audio {
+            margin-left: 6px;
+            width: 694px;
+        }
+
+        html[data-useragent*="OS 8"] #audiowrap {
+            background-color: #e4e4e4;
+        }
+
+        html[data-useragent*="OS 8"] a[id^="btn"] {
+            background-color: #e4e4e4;
+            color: #373837;
+        }
+
+        html[data-useragent*="OS 8"] a[id^="btn"]:hover {
+            background-color: #eee;
+        }
+
+        html[data-useragent*="OS 8"] #plList li {
+            background-color: #e4e4e4;
+        }
+
+        html[data-useragent*="OS 8"] #plList li:hover {
+            background-color: #eee;
+        }
+
+        html[data-useragent*="OS 8"] .plSel,
+        html[data-useragent*="OS 8"] .plSel:hover {
+            background-color: #eee !important;
+        }
+
+        /* IOS 9 */
+        html[data-useragent*="OS 9"] body {
+            color: #373837;
+        }
+
+        html[data-useragent*="OS 9"] audio {
+            margin-left: 6px;
+            width: 694px;
+        }
+
+        html[data-useragent*="OS 9"] #audiowrap {
+            background-color: #d5d5d5;
+        }
+
+        html[data-useragent*="OS 9"] a[id^="btn"] {
+            background-color: #d5d5d5;
+            color: #373837;
+        }
+
+        html[data-useragent*="OS 9"] a[id^="btn"]:hover {
+            background-color: #eee;
+        }
+
+        html[data-useragent*="OS 9"] #plList li {
+            background-color: #d5d5d5;
+        }
+
+        html[data-useragent*="OS 9"] #plList li:hover {
+            background-color: #eee;
+        }
+
+        html[data-useragent*="OS 9"] .plSel,
+        html[data-useragent*="OS 9"] .plSel:hover {
+            background-color: #eee !important;
+        }
+
+        /* Chrome */
+        html[data-useragent*="Chrome"] body {
+            color: #5a5a5a;
+        }
+
+        html[data-useragent*="Chrome"] audio {
+            margin-left: 9px;
+            width: 677px;
+        }
+
+        html[data-useragent*="Chrome"] #audiowrap {
+            background-color: #fafafa;
+        }
+
+        html[data-useragent*="Chrome"] a[id^="btn"] {
+            background-color: #fafafa;
+            color: #5a5a5a;
+        }
+
+        html[data-useragent*="Chrome"] a[id^="btn"]:hover {
+            background-color: #eee;
+        }
+
+        html[data-useragent*="Chrome"] #plList li {
+            background-color: #fafafa;
+        }
+
+        html[data-useragent*="Chrome"] #plList li:hover {
+            background-color: #eee;
+        }
+
+        html[data-useragent*="Chrome"] .plSel,
+        html[data-useragent*="Chrome"] .plSel:hover {
+            background-color: #eee !important;
+        }
+
+        /* Chrome / Android / Tablet */
+        html[data-useragent*="Chrome"][data-useragent*="Android"] body {
+            color: #373837;
+        }
+
+        html[data-useragent*="Chrome"][data-useragent*="Android"] audio {
+            margin-left: 4px;
+            width: 689px;
+        }
+
+        html[data-useragent*="Chrome"][data-useragent*="Android"] #audiowrap {
+            background-color: #fafafa;
+        }
+
+        html[data-useragent*="Chrome"][data-useragent*="Android"] a[id^="btn"] {
+            background-color: #fafafa;
+            color: #373837;
+        }
+
+        html[data-useragent*="Chrome"][data-useragent*="Android"] a[id^="btn"]:hover {
+            background-color: #eee;
+        }
+
+        html[data-useragent*="Chrome"][data-useragent*="Android"] #plList li {
+            background-color: #fafafa;
+        }
+
+        html[data-useragent*="Chrome"][data-useragent*="Android"] #plList li:hover {
+            background-color: #eee;
+        }
+
+        html[data-useragent*="Chrome"][data-useragent*="Android"] .plSel,
+        html[data-useragent*="Chrome"][data-useragent*="Android"] .plSel:hover {
+            background-color: #eee !important;
+        }
+
+        /* Audio Player Media Queries
+        ================================================== */
+
+        /* Tablet Portrait */
+        @media only screen and (min-width: 768px) and (max-width: 959px) {
+            audio {
+                width: 526px;
+            }
+
+            html[data-useragent*="MSIE 9.0"] audio {
+                width: 536px;
+            }
+
+            html[data-useragent*="MSIE 10.0"] audio {
+                width: 543px;
+            }
+
+            html[data-useragent*="rv:11.0"] audio {
+                width: 551px;
+            }
+
+            html[data-useragent*="OS 7"] audio {
+                width: 546px;
+            }
+
+            html[data-useragent*="OS 8"] audio {
+                width: 550px;
+            }
+
+            html[data-useragent*="OS 9"] audio {
+                width: 550px;
+            }
+
+            html[data-useragent*="Chrome"] audio {
+                width: 533px;
+            }
+
+            html[data-useragent*="Chrome"][data-useragent*="Android"] audio {
+                margin-left: 4px;
+                width: 545px;
+            }
+        }
+
+        /* Mobile Landscape */
+        @media only screen and (min-width: 480px) and (max-width: 767px) {
+            audio {
+                width: 390px;
+            }
+
+            html[data-useragent*="MSIE 9.0"] audio {
+                width: 400px;
+            }
+
+            html[data-useragent*="MSIE 10.0"] audio {
+                width: 407px;
+            }
+
+            html[data-useragent*="rv:11.0"] audio {
+                width: 415px;
+            }
+
+            html[data-useragent*="OS 7"] audio {
+                width: 410px;
+            }
+
+            html[data-useragent*="OS 8"] audio {
+                width: 414px;
+            }
+
+            html[data-useragent*="OS 9"] audio {
+                width: 414px;
+            }
+
+            html[data-useragent*="Chrome"] audio {
+                width: 397px;
+            }
+
+            html[data-useragent*="Chrome"][data-useragent*="Mobile"] audio {
+                margin-left: 4px;
+                width: 410px;
+            }
+
+            #npTitle {
+                width: 245px;
+            }
+        }
+
+        /* Mobile Portrait */
+        @media only screen and (max-width: 479px) {
+            audio {
+                width: 270px;
+            }
+
+            html[data-useragent*="MSIE 9.0"] audio {
+                width: 280px;
+            }
+
+            html[data-useragent*="MSIE 10.0"] audio {
+                width: 287px;
+            }
+
+            html[data-useragent*="rv:11.0"] audio {
+                width: 295px;
+            }
+
+            html[data-useragent*="OS 7"] audio {
+                width: 290px;
+            }
+
+            html[data-useragent*="OS 8"] audio {
+                width: 294px;
+            }
+
+            html[data-useragent*="OS 9"] audio {
+                width: 294px;
+            }
+
+            html[data-useragent*="Chrome"] audio {
+                width: 277px;
+            }
+
+            html[data-useragent*="Chrome"][data-useragent*="Mobile"] audio {
+                margin-left: 4px;
+                width: 290px;
+            }
+
+            #npTitle {
+                width: 167px;
+            }
+        }
+    </style>
+
+    <script src="../js/html5media.min.js"></script>
+    <script src="../js/prefixfree.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/AudioStyle.css">
+    <script src="../js/AudioPlayer.js"></script>
+
+    <!--End Audio Player-->
+    <!--End Page Styling-->
+
+</head>
+
+<body class="sticky-header left-side-collapsed" onload="initMap()">
+<section>
+    <!-- left side start-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo and iconic logo start-->
+        <div class="logo">
+            <h1><a href="../index.html">Digital<span>Kosha</span></a></h1>
+        </div>
+        <div class="logo-icon text-center">
+            <a href="../index.html">dk </a>
+        </div>
+        <!-- /Side bar behavoir -->
+        <!--logo and iconic logo end-->
+        <div class="left-side-inner">
+
+            <!--sidebar nav start-->
+            <ul class="nav nav-pills nav-stacked custom-nav">
+                <li class="active"><a href="../index.html"><i class="lnr lnr-home"></i><span>Home</span></a></li>
+                <li><a href="ListArtists.html"><i class="lnr lnr-users"></i> <span>Artists</span></a></li>
+                <li><a href="ListAlbums.html"><i class="lnr lnr-music-note"></i> <span>Albums</span></a></li>
+
+                <li><a href="LatestNews.html"><i class="lnr lnr-book"></i><span>Latest News</span></a></li>
+                <li class="menu-list"><a href="#"><i class="fa fa-user"></i> <span>My Account</span></a>
+                    <ul class="sub-menu-list">
+                        <li><a href="MyPlaylist.html"> Favourities</a></li>
+                        <li><a href="MyProfile.html"> Profile</a></li>
+
+                    </ul>
+                </li>
+                <li class="menu-list"><a href="contact.html"><i class="fa fa-thumb-tack"></i><span>Contact</span></a>
+                    <ul class="sub-menu-list">
+                        <li><a href="contact.html">Location</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--sidebar nav end-->
+        </div>
+    </div>
+
+    <!-- /Side bar behavoir -->
+    <!-- signup -->
+    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-info">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body modal-spa">
+                    <div class="sign-grids">
+                        <div class="sign">
+                            <div class="sign-left">
+                                <ul>
+                                    <li><a class="fb" href="#"><i></i>Sign in with Facebook</a></li>
+                                    <br/>
+                                    <li><a class="goog" href="#"><i></i>Sign in with Google</a></li>
+                                    <br/>
+                                    <li><a class="linkin" href="#"><i></i>Sign in with Linkedin</a></li>
+                                </ul>
+                            </div>
+                            <div class="sign-right">
+                                <form action="#" method="post">
+
+                                    <h3>Create your account </h3>
+                                    <input type="text" value="Name" onfocus="this.value = '';"
+                                           onblur="if (this.value == '') {this.value = 'Name';}" required="">
+                                    <input type="text" value="Mobile Number" onfocus="this.value = '';"
+                                           onblur="if (this.value == '') {this.value = 'Mobile Number';}"
+                                           required="">
+                                    <input type="text" value="Email Address" onfocus="this.value = '';"
+                                           onblur="if (this.value == '') {this.value = 'Email Address';}"
+                                           required="">
+                                    <input type="password" value="Password" onfocus="this.value = '';"
+                                           onblur="if (this.value == '') {this.value = 'Password';}"
+                                           required="">
+                                    <input type="submit" value="CREATE ACCOUNT">
+                                </form>
+                            </div>
+
+                            <div class="clearfix"></div>
+
+
+                        </div>
+                        <p>By logging in you agree to our <span>Terms and Conditions</span> and
+                            <span>Privacy Policy</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //signup -->
+
+    <!-- left side end-->
+
+    <!-- main content start-->
+    <div class="main-content">
+        <!-- header-starts -->
+        <div class="header-section">
+            <!--toggle button start-->
+            <a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a>
+            <!--toggle button end-->
+            <!--notification menu start -->
+            <div class="menu-right">
+                <div class="profile_details">
+                    <div class="col-md-4 serch-part">
+                        <div id="sb-search" class="sb-search">
+                            <form>
+                                <input class="sb-search-input" placeholder="Search" type="search" name="search"
+                                       id="search">
+                                <input class="sb-search-submit" type="submit" value="">
+                                <span class="sb-icon-search"> </span>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- search-scripts -->
+                    <script src="../js/classie.js"></script>
+                    <script src="../js/uisearch.js"></script>
+                    <script>
+                        new UISearch(document.getElementById('sb-search'));
+                    </script>
+                    <!-- //search-scripts -->
+                    <!-- search-scripts -->
+                    <script src="../js/classie.js"></script>
+                    <script src="../js/uisearch.js"></script>
+                    <script>
+                        new UISearch(document.getElementById('	sb-search'));
+                    </script>
+                    <!-- //search-scripts -->
+                    <!--Audio Player-->
+                    <div class="col-md-4 ">
+
+                        <ul class="myNav">
+                            <li><a href="ListAlbums.html">Albums</a></li>
+                            <li><a href="ListArtists.html">Artists</a></li>
+                            <li><a href="TopCharts.html">Top Charts</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-4 login-pop">
+                        <div id="loginpop"><a href="#" id="loginButton"><span>Login <i
+                                class="arrow glyphicon glyphicon-log-in "></i></span></a> &nbsp;
+                            <a class="" id="RegButton" href="#" data-toggle="modal" data-target="#myModal5"><span>Sign Up <i
+                                    class="arrow fa fa-plus  fa fa-2x"></i></span></a>
+
+                            <div id="loginBox">
+                                <form action="#" method="post" id="loginForm">
+                                    <fieldset id="body">
+                                        <fieldset>
+                                            <label for="email">Email Address</label>
+                                            <input type="text" name="email" id="email">
+                                        </fieldset>
+                                        <fieldset>
+                                            <label for="password">Password</label>
+                                            <input class="form-control" type="password" name="password" id="password">
+                                        </fieldset>
+                                        <input type="submit" id="login" value="Sign in">
+                                        <label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember
+                                            me</i></label>
+                                    </fieldset>
+                                    <span><a href="#">Forgot your password?</a></span>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-------->
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!--notification menu end -->
+        <!-- //header-ends -->
+        <!--------------------------------------------------------------------------Start of Page Content-------------------->
+        <div id="page-wrapper">
+            <h1 class="tittle">My Favourite Songs</h1>
+            <br/>
+            <div class="container">
+
+                <div class="column add-bottom">
+                    <div id="mainwrap">
+                        <div id="nowPlay">
+                            <span class="left" id="npAction">Paused...</span>
+                            <span class="right" id="npTitle"></span>
+                        </div>
+                        <div id="audiowrap">
+                            <div id="audio0">
+                                <audio preload id="audio1" controls="controls">Your browser does not support HTML5
+                                    Audio!
+                                </audio>
+                            </div>
+                            <div id="tracks">
+                                <a id="btnPrev">&laquo;</a>
+                                <a id="btnNext">&raquo;</a>
+                            </div>
+                        </div>
+                        <div id="plwrap">
+                            <ul id="plList"></ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+        <!-----------------------------------------------------------------------------END of Page Content------------------------------------>
+
+    </div>
+    <!--body wrapper end-->
+    <div class="footer">
+
+        <!--footer section start-->
+        <footer>
+            <p>&copy 2016 Mosaic. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts
+                & <4 Tier/> </a></p>
+        </footer>
+        <!--footer section end-->
+    </div>
+    </div>
+    <!-- main content end-->
+</section>
+
+<script src="../js/jquery.nicescroll.js"></script>
+<script src="../js/scripts.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

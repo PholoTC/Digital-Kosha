@@ -1,0 +1,578 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Digital Kosha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Mosaic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <!-- Custom CSS -->
+    <link href="../css/style.css" rel='stylesheet' type='text/css'/>
+    <!-- Graph CSS -->
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <!-- jQuery -->
+    <!-- lined-icons -->
+    <link rel="stylesheet" href="../css/icon-font.css" type='text/css'/>
+    <!-- //lined-icons -->
+    <!-- Meters graphs -->
+    <script src="../js/jquery-2.1.4.js"></script>
+
+    <!--Awesomeplete-->
+    <link href="../css/awesomplete.base.css" rel="stylesheet">
+    <link href="../css/awesomplete.css" rel="stylesheet">
+    <script src="../js/awesomplete.js"></script>
+    <script src="../js/awesomplete.min.js"></script>
+    <!--End Awesomeplete-->
+
+
+    <!--Page Styling-->
+    <style>
+        .nav-tabs {
+            font-weight: 600;
+
+        }
+
+        .table-striped:nth-child(2n+1) {
+
+        }
+        .fb-profile-text
+        {
+            margin-left: 9em;
+            padding-left: 5em;
+            text-align: left;
+
+        }
+    </style>
+    <!--End Page Styling-->
+
+</head>
+
+<body class="sticky-header left-side-collapsed" onload="initMap()">
+<section>
+    <!-- left side start-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo and iconic logo start-->
+        <div class="logo">
+            <h1><a href="../index.html">Digital<span>Kosha</span></a></h1>
+        </div>
+        <div class="logo-icon text-center">
+            <a href="../index.html">dk </a>
+        </div>
+        <!-- /Side bar behavoir -->
+        <!--logo and iconic logo end-->
+        <div class="left-side-inner">
+
+            <!--sidebar nav start-->
+            <ul class="nav nav-pills nav-stacked custom-nav">
+                <li class="active"><a href="../index.html"><i class="lnr lnr-home"></i><span>Home</span></a></li>
+                <li><a href="ListArtists.html"><i class="lnr lnr-users"></i> <span>Artists</span></a></li>
+                <li><a href="ListAlbums.html"><i class="lnr lnr-music-note"></i> <span>Albums</span></a></li>
+
+                <li><a href="LatestNews.html"><i class="lnr lnr-book"></i><span>Latest News</span></a></li>
+                <li class="menu-list"><a href="#"><i class="fa fa-user"></i> <span>My Account</span></a>
+                    <ul class="sub-menu-list">
+                        <li><a href="MyPlaylist.html"> Favourities</a></li>
+                        <li><a href="MyProfile.html"> Profile</a></li>
+
+                    </ul>
+                </li>
+                <li class="menu-list"><a href="contact.html"><i class="fa fa-thumb-tack"></i><span>Contact</span></a>
+                    <ul class="sub-menu-list">
+                        <li><a href="contact.html">Location</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--sidebar nav end-->
+        </div>
+    </div>
+
+    <!-- /Side bar behavoir -->
+    <!-- signup -->
+    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-info">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body modal-spa">
+                    <div class="sign-grids">
+                        <div class="sign">
+                            <div class="sign-left">
+                                <ul>
+                                    <li><a class="fb" href="#"><i></i>Sign in with Facebook</a></li>
+                                    <br/>
+                                    <li><a class="goog" href="#"><i></i>Sign in with Google</a></li>
+                                    <br/>
+                                    <li><a class="linkin" href="#"><i></i>Sign in with Linkedin</a></li>
+                                </ul>
+                            </div>
+                            <div class="sign-right">
+                                <form action="#" method="post">
+
+                                    <h3>Create your account </h3>
+                                    <input type="text" value="Name" onfocus="this.value = '';"
+                                           onblur="if (this.value == '') {this.value = 'Name';}" required="">
+                                    <input type="text" value="Mobile Number" onfocus="this.value = '';"
+                                           onblur="if (this.value == '') {this.value = 'Mobile Number';}"
+                                           required="">
+                                    <input type="text" value="Email Address" onfocus="this.value = '';"
+                                           onblur="if (this.value == '') {this.value = 'Email Address';}"
+                                           required="">
+                                    <input type="password" value="Password" onfocus="this.value = '';"
+                                           onblur="if (this.value == '') {this.value = 'Password';}"
+                                           required="">
+                                    <input type="submit" value="CREATE ACCOUNT">
+                                </form>
+                            </div>
+
+                            <div class="clearfix"></div>
+
+
+                        </div>
+                        <p>By logging in you agree to our <span>Terms and Conditions</span> and
+                            <span>Privacy Policy</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //signup -->
+
+    <!-- left side end-->
+
+    <!-- main content start-->
+    <div class="main-content">
+        <!-- header-starts -->
+        <div class="header-section">
+            <!--toggle button start-->
+            <a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a>
+            <!--toggle button end-->
+            <!--notification menu start -->
+            <div class="menu-right">
+                <div class="profile_details">
+                    <div class="col-md-4 serch-part">
+                        <div id="sb-search" class="sb-search">
+                            <form>
+                                <input class="sb-search-input" placeholder="Search" type="search" name="search"
+                                       id="search">
+                                <input class="sb-search-submit" type="submit" value="">
+                                <span class="sb-icon-search"> </span>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- search-scripts -->
+                    <script src="../js/classie.js"></script>
+                    <script src="../js/uisearch.js"></script>
+                    <script>
+                        new UISearch(document.getElementById('sb-search'));
+                    </script>
+                    <!-- //search-scripts -->
+                    <!-- search-scripts -->
+                    <script src="../js/classie.js"></script>
+                    <script src="../js/uisearch.js"></script>
+                    <script>
+                        new UISearch(document.getElementById('	sb-search'));
+                    </script>
+                    <!-- //search-scripts -->
+                    <!--Audio Player-->
+                    <div class="col-md-4 ">
+
+                        <ul class="myNav">
+                            <li><a href="ListAlbums.html">Albums</a></li>
+                            <li><a href="ListArtists.html">Artists</a></li>
+                            <li><a href="TopCharts.html">Top Charts</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-4 login-pop">
+                        <div id="loginpop"><a href="#" id="loginButton"><span>Login <i
+                                class="arrow glyphicon glyphicon-log-in "></i></span></a> &nbsp;
+                            <a class="" id="RegButton" href="#" data-toggle="modal" data-target="#myModal5"><span>Sign Up <i
+                                    class="arrow fa fa-plus  fa fa-2x"></i></span></a>
+
+                            <div id="loginBox">
+                                <form action="#" method="post" id="loginForm">
+                                    <fieldset id="body">
+                                        <fieldset>
+                                            <label for="email">Email Address</label>
+                                            <input type="text" name="email" id="email">
+                                        </fieldset>
+                                        <fieldset>
+                                            <label for="password">Password</label>
+                                            <input class="form-control" type="password" name="password" id="password">
+                                        </fieldset>
+                                        <input type="submit" id="login" value="Sign in">
+                                        <label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember
+                                            me</i></label>
+                                    </fieldset>
+                                    <span><a href="#">Forgot your password?</a></span>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-------->
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!--notification menu end -->
+        <!-- //header-ends -->
+        <!--------------------------------------------------------------------------Start of Page Content-------------------->        <div id="page-wrapper">
+
+            <div class="container">
+                <div class="fb-profile">
+                    <img align="left" class="fb-image-profile thumbnail" src="../images/Albums/AKA.jpg"
+                         alt="Profile image example"/>
+                    <div class="fb-profile-text">
+                        <h1>    User Name</h1>
+                        <p>     Something to say</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /container -->
+
+
+            <hr>
+            <div class="container bootstrap snippet">
+                <div class="row">
+                    <!--  <div class="col-sm-10"><h1>User Name</h1></div>-->
+                </div>
+                <div class="row">
+                    <div class="col-sm-3"><!--left col-->
+
+                        <ul class="list-group">
+                            <li class="list-group-item text-muted">Profile <i class="fa fa-user pull-right"></i></li>
+                            <li class="list-group-item text-right"><span
+                                    class="pull-left"><strong>Joined</strong></span> 2.13.2014
+                            </li>
+                            <li class="list-group-item text-right"><span
+                                    class="pull-left"><strong>Real name</strong></span> Name
+                            </li>
+                            <li class="list-group-item text-right"><span class="pull-left"><strong>Genre</strong></span>
+                                Hip Hop
+                            </li>
+
+                        </ul>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Social Media <i class="fa fa-"></i></div>
+                            <div class="panel-body">
+                                <i class="fa fa-facebook fa-2x" style="padding-right:0.5em;"></i>
+                                <i class="fa fa-twitter fa-2x" style="padding-right:0.5em;"></i>
+                                <i class="fa fa-instagram fa-2x" style="padding-right:0.5em;"></i>
+                                <i class="fa fa-google-plus fa-2x" style="padding-right:0.5em;"></i>
+                                <i class="fa fa-link fa-2x" style="padding-right:0.5em;"></i>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Email <i class="fa fa-envelope-o fa-1x pull-right"></i></div>
+                            <div class="panel-body"><a href="#">you@email.com</a></div>
+                        </div>
+
+
+                        <ul class="list-group">
+                            <li class="list-group-item  text-muted"> Activity <i class="fa fa-gears fa-1x pull-right"></i>
+                            </li>
+                            <li class="list-group-item text-right"><span
+                                    class="pull-left"><strong>Uploads</strong></span> 125
+                            </li>
+                            <li class="list-group-item text-right"><span class="pull-left"><strong>Likes</strong></span>
+                                13
+                            </li>
+                            <li class="list-group-item text-right"><span class="pull-left"><strong>Posts</strong></span>
+                                37
+                            </li>
+                            <li class="list-group-item text-right"><span
+                                    class="pull-left"><strong>Followers</strong></span> 78
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+                    <!--/col-3-->
+
+                    <div class="col-sm-9">
+
+                        <ul class="nav nav-tabs" id="myTab">
+                            <li class="active"><a href="#Details" data-toggle="tab">Details</a></li>
+                            <li><a href="#Tracks" data-toggle="tab">Tracks</a></li>
+                            <li><a href="#Albums" data-toggle="tab">Albums</a></li>
+                            <li><a href="#Downloads" data-toggle="tab">Downloads</a></li>
+                            <li><a href="#settings" data-toggle="tab">Settings</a></li>
+                            <li><a href="#Comments" data-toggle="tab">Comments</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+
+                            <!--Details-->
+                            <div class="tab-pane active" id="Details">
+                                <div class="table-responsive">
+                                    <table class="table table-responsive table-striped table-hover" style="width: 98%;">
+                                        <thead>
+                                        <tr>
+
+                                            <th>Information</th>
+                                            <th>Details</th>
+
+                                        </tr>
+                                        </thead>
+                                        <tbody id="items">
+                                        <tr>
+
+                                            <td>Name</td>
+                                            <td>Artist Name</td>
+
+                                        </tr>
+                                        <tr>
+
+                                            <td>Last Name</td>
+                                            <td>Artist Surname</td>
+
+                                        </tr>
+                                        <tr>
+
+                                            <td>Stage Name</td>
+                                            <td>Stage Name</td>
+
+                                        </tr>
+                                        <tr>
+
+                                            <td>Email Address</td>
+                                            <td>you@email.com</td>
+
+                                        </tr>
+                                        <tr>
+
+                                            <td>Phone number</td>
+                                            <td>0123456789</td>
+
+                                        </tr>
+                                        <tr>
+
+                                            <td>Music genre</td>
+                                            <td>Genre</td>
+
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <hr>
+
+                                </div>
+                                <!--/table-resp-->
+
+                                <hr>
+
+                            </div>
+                            <!--/Details-->
+
+                            <!--Tracks-->
+                            <div class="tab-pane" id="Tracks">
+
+                                <hr>
+
+                                <h2> Uploaded Tracks</h2>
+
+                                <!--   <ul class="list-group">
+                                       <li class="list-group-item text-muted">Inbox</li>
+                                       <li class="list-group-item text-right"><a href="#" class="pull-left">Here is your a link to the latest summary report from the..</a> 2.13.2014</li>
+                                       <li class="list-group-item text-right"><a href="#" class="pull-left">Hi Joe, There has been a request on your account since that was..</a> 2.11.2014</li>
+                                       <li class="list-group-item text-right"><a href="#" class="pull-left">Nullam sapien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+                                       <li class="list-group-item text-right"><a href="#" class="pull-left">Thllam sapien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+                                       <li class="list-group-item text-right"><a href="#" class="pull-left">Wesm sapien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+                                       <li class="list-group-item text-right"><a href="#" class="pull-left">For therepien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+                                       <li class="list-group-item text-right"><a href="#" class="pull-left">Also we, havesapien massaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+                                       <li class="list-group-item text-right"><a href="#" class="pull-left">Swedish chef is assaortor. A lobortis vitae, condimentum justo...</a> 2.11.2014</li>
+
+                                   </ul>-->
+
+                            </div><!--/tab-pane-->
+                            <!--/Tracks-->
+
+                            <!--Albums-->
+                            <div class="tab-pane" id="Albums">
+
+                                <hr>
+
+                                <h2> Uploaded Albums</h2>
+
+
+                            </div>
+                            <!--/Albums-->
+
+                            <!--Downloads-->
+                            <div class="tab-pane" id="Downloads">
+
+                                <hr>
+
+                                <h2>Downloads</h2>
+
+                            </div><!--/tab-pane-->
+                            <!--/Downloads-->
+
+                            <!--Settings-->
+                            <div class="tab-pane" id="settings">
+
+
+                                <hr>
+                                <form class="form" action="##" method="post" id="registrationForm">
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="first_name"><h4>First name</h4></label>
+                                            <input type="text" class="form-control" name="first_name" id="first_name"
+                                                   placeholder="first name" title="enter your first name if any.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="last_name"><h4>Last name</h4></label>
+                                            <input type="text" class="form-control" name="last_name" id="last_name"
+                                                   placeholder="last name" title="enter your last name if any.">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="phone"><h4>Phone</h4></label>
+                                            <input type="text" class="form-control" name="phone" id="phone"
+                                                   placeholder="enter phone" title="enter your phone number if any.">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-xs-6">
+                                            <label for="mobile"><h4>Mobile</h4></label>
+                                            <input type="text" class="form-control" name="mobile" id="mobile"
+                                                   placeholder="enter mobile number"
+                                                   title="enter your mobile number if any.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="email"><h4>Email</h4></label>
+                                            <input type="email" class="form-control" name="email" id="email1"
+                                                   placeholder="you@email.com" title="enter your email.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="email"><h4>Location</h4></label>
+                                            <input type="email" class="form-control" id="location"
+                                                   placeholder="somewhere" title="enter a location">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="password"><h4>Password</h4></label>
+                                            <input type="password" class="form-control" name="password" id="password1"
+                                                   placeholder="password" title="enter your password.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6">
+                                            <label for="password2"><h4>Verify</h4></label>
+                                            <input type="password" class="form-control" name="password2" id="password2"
+                                                   placeholder="password2" title="enter your password2.">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <br>
+                                            <button class="btn btn-lg btn-success" type="submit"><i
+                                                    class="glyphicon glyphicon-ok-sign"></i> Save
+                                            </button>
+                                            <button class="btn btn-lg" type="reset"><i
+                                                    class="glyphicon glyphicon-repeat"></i> Reset
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--/Settings-->
+
+                            <!--Settings-->
+                            <div class="tab-pane" id="Comments">
+
+
+                                <hr>
+                                <h2>Comments Section</h2>
+                            </div>
+                            <!--/Settings-->
+
+                        </div><!--/tab-pane-->
+                    </div><!--/tab-content-->
+
+                </div><!--/col-9-->
+            </div><!--/row-->
+
+            <script type="text/javascript">
+
+                // This just toggles the follow/following of the button
+                $('a.follow').click(function () {
+                    $(this).toggleClass('followed');
+
+                    if ($(this).hasClass('followed')) {
+                        $(this).text('Followed');
+                        $('ul li:last-child').html('325<span>Followers</span>');
+                    }
+                    else {
+                        $(this).text('Follow Nick');
+                        $('ul li:last-child').html('324<span>Followers</span>');
+                    }
+                });
+
+            </script>
+
+        </div>
+
+
+    </div>
+    <div class="clearfix"></div>
+    <!-----------------------------------------------------------------------------END of Page Content------------------------------------>
+
+    </div>
+    <!--body wrapper end-->
+    <div class="footer">
+
+        <!--footer section start-->
+        <footer>
+            <p>&copy 2016 Mosaic. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts
+                & <4 Tier/> </a></p>
+        </footer>
+        <!--footer section end-->
+    </div>
+    </div>
+    <!-- main content end-->
+</section>
+
+<script src="../js/jquery.nicescroll.js"></script>
+<script src="../js/scripts.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

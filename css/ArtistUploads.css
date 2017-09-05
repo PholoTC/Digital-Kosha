@@ -1,0 +1,105 @@
+
+
+.item {
+@include clearfix;
+    padding: 1em;
+    margin: 1em;
+    background-color: #45B39D;
+    border: black;
+    border-radius: 1em;
+}
+
+.item-title {
+    font-weight: 400;
+    color: white ;
+
+
+}
+
+.year {
+    display: block;
+    color: black;
+    margin-bottom: 20px;
+}
+
+a.button {
+    float: left;
+    margin-right: 2em;
+    outline: none;
+
+}
+
+
+
+a {
+    display: inline-block;
+
+    transition: .3s ease;
+}
+
+a:hover {
+    color: #EA57A3;
+}
+.row a
+{
+    padding-left: 1em;
+}
+
+.row .btn {
+    background: #000000 ;
+    border: 1px solid #f4f4f4;
+    padding:1em ;
+    margin-top: .5em;
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    outline: none;
+    transition:.5s all;
+    -webkit-transition:.5s all;
+    -moz-transition:.5s all;
+    -o-transition:.5s all;
+    -ms-transition:.5s all;
+    text-transform:uppercase;
+    font-family: 'Lato-Regular';
+    border-radius:4px;
+    -o-border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+.row .btn:hover{
+    padding-left: 2em;
+    color: #000000;
+    background: lightgrey;
+    outline: none;
+    transition:.5s all;
+    -webkit-transition:.5s all;
+    -moz-transition:.5s all;
+    -o-transition:.5s all;
+    -ms-transition:.5s all;
+}
+
+.row a .btn
+{
+    margin-left: 2em;
+}
+.row .btn-default:hover {
+    padding-left: 1em;
+    color: #000000;
+    background: #EA57A3;
+    outline: none;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+}
+.row i
+{
+    padding-left: 2em;
+}
+.row a
+{
+    padding-top: 1em;
+    padding-left: 2em;
+    outline: none;
+}

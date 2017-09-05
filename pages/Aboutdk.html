@@ -1,0 +1,639 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Digital Kosha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Mosaic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <!-- Custom CSS -->
+    <link href="../css/style.css" rel='stylesheet' type='text/css'/>
+    <!-- Graph CSS -->
+    <link href="../css/font-awesome.css" rel="stylesheet">
+    <!-- jQuery -->
+    <!-- lined-icons -->
+    <link rel="stylesheet" href="../css/icon-font.css" type='text/css'/>
+    <!-- //lined-icons -->
+    <!-- Meters graphs -->
+    <script src="../js/jquery-2.1.4.js"></script>
+
+    <!--Awesomeplete-->
+    <link href="../css/awesomplete.base.css" rel="stylesheet">
+    <link href="../css/awesomplete.css" rel="stylesheet">
+    <script src="../js/awesomplete.js"></script>
+    <script src="../js/awesomplete.min.js"></script>
+    <!--End Awesomeplete-->
+
+
+    <!--Page Styling-->
+    <style>
+        header h1{
+            text-align: center;
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        header p{
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .hexa{
+            border: 0px;
+            float: left;
+            text-align: center;
+            height: 35px;
+            width: 60px;
+            font-size: 22px;
+            background: #f0f0f0;
+            color: #3c3c3c;
+            position: relative;
+            margin-top: 15px;
+        }
+
+        .hexa:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-bottom: 15px solid #f0f0f0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            top: -15px;
+        }
+
+        .hexa:after{
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-top: 15px solid #f0f0f0;
+            bottom: -15px;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 0;
+            width: 100%;
+            margin-top: 20px;
+            list-style-type: none;
+        }
+
+        .timeline:before {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            content: ' ';
+            display: block;
+            width: 2px;
+            height: 100%;
+            margin-left: -1px;
+            background: rgb(213,213,213);
+            background: -moz-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+            background: -webkit-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+            background: -o-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+            background: -ms-linear-gradient(top, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+            background: linear-gradient(to bottom, rgba(213,213,213,0) 0%, rgb(213,213,213) 8%, rgb(213,213,213) 92%, rgba(213,213,213,0) 100%);
+            z-index: 5;
+        }
+
+        .timeline li {
+            padding: 2em 0;
+        }
+
+        .timeline .hexa{
+            width: 16px;
+            height: 10px;
+            position: absolute;
+            background: #00c4f3;
+            z-index: 5;
+            left: 0;
+            right: 0;
+            margin-left:auto;
+            margin-right:auto;
+            top: -30px;
+            margin-top: 0;
+        }
+
+        .timeline .hexa:before {
+            border-bottom: 4px solid #00c4f3;
+            border-left-width: 8px;
+            border-right-width: 8px;
+            top: -4px;
+        }
+
+        .timeline .hexa:after {
+            border-left-width: 8px;
+            border-right-width: 8px;
+            border-top: 4px solid #00c4f3;
+            bottom: -4px;
+        }
+
+        .direction-l,
+        .direction-r {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+
+        .flag-wrapper {
+            text-align: center;
+            position: relative;
+        }
+
+        .flag {
+            position: relative;
+            display: inline;
+            background: rgb(255,255,255);
+            font-weight: 600;
+            z-index: 15;
+            padding: 6px 10px;
+            text-align: left;
+            border-radius: 5px;
+        }
+
+        .direction-l .flag:after,
+        .direction-r .flag:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: -15px;
+            height: 0;
+            width: 0;
+            margin-left: -8px;
+            border: solid transparent;
+            border-bottom-color: rgb(255,255,255);
+            border-width: 8px;
+            pointer-events: none;
+        }
+
+        .direction-l .flag {
+            -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+            -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+            box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        }
+
+        .direction-r .flag {
+            -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+            -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+            box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        }
+
+        .time-wrapper {
+            display: block;
+            position: relative;
+            margin: 4px 0 0 0;
+            z-index: 14;
+            line-height: 1em;
+            vertical-align: middle;
+            color: #fff;
+        }
+
+        .direction-l .time-wrapper {
+            float: none;
+        }
+
+        .direction-r .time-wrapper {
+            float: none;
+        }
+
+
+        .desc {
+            position: relative;
+            margin: 1em 0 0 0;
+            padding: 1em;
+            background: rgb(254,254,254);
+            -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+            -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+            box-shadow: 0 0 1px rgba(0,0,0,0.20);
+            z-index: 15;
+        }
+
+        .direction-l .desc,
+        .direction-r .desc {
+            position: relative;
+            margin: 1em 1em 0 1em;
+            padding: 1em;
+            z-index: 15;
+            text-align: left;
+        }
+
+        @media(min-width: 768px){
+            .timeline {
+                width: 660px;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+
+            .timeline li:after {
+                content: "";
+                display: block;
+                height: 0;
+                clear: both;
+                visibility: hidden;
+            }
+
+            .timeline .hexa {
+                left: -28px;
+                right: auto;
+                top: 8px;
+            }
+
+            .timeline .direction-l .hexa {
+                left: auto;
+                right: -28px;
+            }
+
+            .direction-l {
+                position: relative;
+                width: 310px;
+                float: left;
+                text-align: left;
+            }
+
+            .direction-r {
+                position: relative;
+                width: 310px;
+                float: right;
+                text-align: left;
+            }
+
+            .flag-wrapper {
+                display: inline-block;
+            }
+
+            .flag {
+                font-size: 18px;
+            }
+
+            .direction-l .flag:after {
+                left: auto;
+                right: -16px;
+                top: 50%;
+                margin-top: -8px;
+                border: solid transparent;
+                border-left-color: rgb(254,254,254);
+                border-width: 8px;
+            }
+
+            .direction-r .flag:after {
+                top: 50%;
+                margin-top: -8px;
+                border: solid transparent;
+                border-right-color: rgb(254,254,254);
+                border-width: 8px;
+                left: -8px;
+            }
+
+            .time-wrapper {
+                display: inline;
+                vertical-align: middle;
+                margin: 0;
+            }
+
+            .direction-l .time-wrapper {
+                float: left;
+            }
+
+            .direction-r .time-wrapper {
+                float: right;
+            }
+
+            .time {
+                padding: 5px 10px;
+            }
+
+            .direction-r .desc {
+                margin: 1em 0 0 0.75em;
+            }
+        }
+
+        @media(min-width: 992px){
+            .timeline {
+                width: 800px;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+
+            .direction-l {
+                position: relative;
+                width: 380px;
+                float: left;
+               text-align: right;
+            }
+
+            .direction-r {
+                position: relative;
+                width: 380px;
+                float: right;
+                text-align: left;
+            }
+        }
+
+    </style>
+
+    <!--End Page Styling-->
+
+</head>
+
+<body class="sticky-header left-side-collapsed" onload="initMap()">
+<section>
+    <!-- left side start-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo and iconic logo start-->
+        <div class="logo">
+            <h1><a href="../index.html">Digital<span>Kosha</span></a></h1>
+        </div>
+        <div class="logo-icon text-center">
+            <a href="../index.html">dk </a>
+        </div>
+        <!-- /Side bar behavoir -->
+        <!--logo and iconic logo end-->
+        <div class="left-side-inner">
+
+            <!--sidebar nav start-->
+            <ul class="nav nav-pills nav-stacked custom-nav">
+                <li class="active"><a href="../index.html"><i class="lnr lnr-home"></i><span>Home</span></a></li>
+                <li><a href="ListArtists.html"><i class="lnr lnr-users"></i> <span>Artists</span></a></li>
+                <li><a href="ListAlbums.html"><i class="lnr lnr-music-note"></i> <span>Albums</span></a></li>
+
+                <li><a href="LatestNews.html"><i class="lnr lnr-book"></i><span>Latest News</span></a></li>
+                <li class="menu-list"><a href="#"><i class="fa fa-user"></i> <span>My Account</span></a>
+                    <ul class="sub-menu-list">
+                        <li><a href="MyPlaylist.html"> Favourites</a></li>
+                        <li><a href="MyProfile.html"> Profile</a></li>
+
+                    </ul>
+                </li>
+                <li class="menu-list"><a href="contact.html"><i class="fa fa-thumb-tack"></i><span>Contact</span></a>
+                    <ul class="sub-menu-list">
+                        <li><a href="contact.html">Location</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--sidebar nav end-->
+        </div>
+    </div>
+
+    <!-- /Side bar behavoir -->
+    <!-- signup -->
+    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-info">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body modal-spa">
+                    <div class="sign-grids">
+                        <div class="sign">
+                            <div class="sign-left">
+                                <ul>
+                                    <li><a class="fb" href="#"><i></i>Sign in with Facebook</a></li>
+                                    <br/>
+                                    <li><a class="goog" href="#"><i></i>Sign in with Google</a></li>
+                                    <br/>
+                                    <li><a class="linkin" href="#"><i></i>Sign in with Linkedin</a></li>
+                                </ul>
+                            </div>
+                            <div class="sign-right">
+                                <form action="#" method="post">
+
+                                    <h3>Create your account </h3>
+                                    <input type="text" value="Name" onfocus="this.value = '';"
+                                           onblur="if (this.value == '') {this.value = 'Name';}" required="">
+                                    <input type="text" value="Mobile Number" onfocus="this.value = '';"
+                                           onblur="if (this.value == '') {this.value = 'Mobile Number';}"
+                                           required="">
+                                    <input type="text" value="Email Address" onfocus="this.value = '';"
+                                           onblur="if (this.value == '') {this.value = 'Email Address';}"
+                                           required="">
+                                    <input type="password" value="Password" onfocus="this.value = '';"
+                                           onblur="if (this.value == '') {this.value = 'Password';}"
+                                           required="">
+                                    <input type="submit" value="CREATE ACCOUNT">
+                                </form>
+                            </div>
+
+                            <div class="clearfix"></div>
+
+
+                        </div>
+                        <p>By logging in you agree to our <span>Terms and Conditions</span> and
+                            <span>Privacy Policy</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //signup -->
+
+    <!-- left side end-->
+
+    <!-- main content start-->
+    <div class="main-content">
+        <!-- header-starts -->
+        <div class="header-section">
+            <!--toggle button start-->
+            <a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a>
+            <!--toggle button end-->
+            <!--notification menu start -->
+            <div class="menu-right">
+                <div class="profile_details">
+                    <div class="col-md-4 serch-part">
+                        <div id="sb-search" class="sb-search">
+                            <form>
+                                <input class="sb-search-input" placeholder="Search" type="search" name="search"
+                                       id="search">
+                                <input class="sb-search-submit" type="submit" value="">
+                                <span class="sb-icon-search"> </span>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- search-scripts -->
+                    <script src="../js/classie.js"></script>
+                    <script src="../js/uisearch.js"></script>
+                    <script>
+                        new UISearch(document.getElementById('sb-search'));
+                    </script>
+                    <!-- //search-scripts -->
+                    <!-- search-scripts -->
+                    <script src="../js/classie.js"></script>
+                    <script src="../js/uisearch.js"></script>
+                    <script>
+                        new UISearch(document.getElementById('	sb-search'));
+                    </script>
+                    <!-- //search-scripts -->
+                    <!--Audio Player-->
+                    <div class="col-md-4 ">
+
+                        <ul class="myNav">
+                            <li><a href="ListAlbums.html">Albums</a></li>
+                            <li><a href="ListArtists.html">Artists</a></li>
+                            <li><a href="TopCharts.html">Top Charts</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-4 login-pop">
+                        <div id="loginpop"><a href="#" id="loginButton"><span>Login <i
+                                class="arrow glyphicon glyphicon-log-in "></i></span></a> &nbsp;
+                            <a class="" id="RegButton" href="#" data-toggle="modal" data-target="#myModal5"><span>Sign Up <i
+                                    class="arrow fa fa-plus  fa fa-2x"></i></span></a>
+
+                            <div id="loginBox">
+                                <form action="#" method="post" id="loginForm">
+                                    <fieldset id="body">
+                                        <fieldset>
+                                            <label for="email">Email Address</label>
+                                            <input type="text" name="email" id="email">
+                                        </fieldset>
+                                        <fieldset>
+                                            <label for="password">Password</label>
+                                            <input class="form-control" type="password" name="password" id="password">
+                                        </fieldset>
+                                        <input type="submit" id="login" value="Sign in">
+                                        <label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember
+                                            me</i></label>
+                                    </fieldset>
+                                    <span><a href="#">Forgot your password?</a></span>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-------->
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!--notification menu end -->
+        <!-- //header-ends -->
+        <!--------------------------------------------------------------------------Start of Page Content-------------------->
+        <div id="page-wrapper">
+
+            <header>
+
+                <h1>About Digital Kosha</h1>
+            </header>
+
+            <ul class="timeline">
+                <!-- Item 1 -->
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="hexa"></span>
+                            <span class="flag">What is digital kosha?</span>
+                            <!-- <span class="time-wrapper"><span class="time">Feb 2015</span></span>-->
+                        </div>
+                        <div class="desc">digital kosha is an Internet-based networking platform that helps promote upcoming South African musicians.
+                            Here musicians can share their music with the public and interact with their followers.
+                            Artists can market themselves by posting events where they will be performing.
+                            The public can access the music content on the platform through streaming and downloads.</div>
+                    </div>
+                </li>
+
+                <!-- Item 2 -->
+                <li>
+                    <div class="direction-l">
+                        <div class="flag-wrapper">
+                            <span class="hexa"></span>
+                            <span class="flag">The Legends In The Making</span>
+                            <!-- <span class="time-wrapper"><span class="time">Dec 2014</span></span>-->
+                        </div>
+                        <div class="desc"><p>
+                            The Legends in the Making – Spot a Legend competition,
+                            gives aspiring artists an opportunity to showcase their talent and collaborate internationally. <br/>
+                            In 2017, artists will be have an opportunity to physically and digitally expand their markets internationally,
+                            gaining a footprint in East Africa, South Africa and beyond. <br/>
+                            They will be introduced to entertainment industry experts who put them on platforms that will grow their brands.
+                        </p><br/>
+
+                            <p>
+                                The structure of the competition gives you and opportunity to talk to your people and fans.
+                                It is platform for people to interact with your talent and to back it up through their votes!
+
+                            </p></div>
+                    </div>
+                </li>
+
+                <!-- Item 3 -->
+              <!--  <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="hexa"></span>
+                            <span class="flag">Registration</span>
+                            <!--  <span class="time-wrapper"><span class="time">July 2014</span></span>
+                        </div>
+                        <div class="desc">Music artists will undergo two types of registration. <br/>
+                            1. Registering as a user on the website <br/>
+                            2. Registering as an artist for the website. <br/>
+                            Each registration have different kinds information that must be filled correctly.</div>
+                    </div>
+                </li>-->
+
+                <!-- Item 4 -->
+               <!-- <li>
+                    <div class="direction-l">
+                        <div class="flag-wrapper">
+                            <span class="hexa"></span>
+                            <span class="flag">Artists</span>
+                            <!-- <span class="time-wrapper"><span class="time">Dec 2014</span></span>
+                        </div>
+                        <div class="desc">Artists on the site will be able to : <br/>
+                            1. Check for music ratings and rate other music.<br/>
+                            2. Check for music which are under top charts.<br/>
+                            3. Comment on music and events that are posted.<br/>
+                            4. Update their profile, music , and music.<br/>
+                            5. Check for contacts that have been established by music records.
+                        </div>
+                    </div>
+                </li>-->
+
+            </ul>
+
+        </div>
+        <div class="clearfix"></div>
+        <!-----------------------------------------------------------------------------END of Page Content------------------------------------>
+
+    </div>
+    <!--body wrapper end-->
+    <div class="footer">
+
+        <!--footer section start-->
+        <footer>
+            <p>&copy 2016 Mosaic. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts
+                & <4 Tier/> </a></p>
+        </footer>
+        <!--footer section end-->
+    </div>
+    </div>
+    <!-- main content end-->
+</section>
+
+<script src="../js/jquery.nicescroll.js"></script>
+<script src="../js/scripts.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.js"></script>
+</body>
+
+</html>
